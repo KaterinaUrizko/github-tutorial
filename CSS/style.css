@@ -1,0 +1,131 @@
+/* Основные цвета
+#2196F3 - логотип, ховер, кнопки 
+#212121 - текст заголовков h2, h3 и подписей
+ #757575 - текст текста
+ #FFFFFF - текст подписей и 
+ */
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+:root {
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --text-white-color: #ffffff;
+  --primary-text-color: #757575;
+  --primary-bg-color: #e5e5e5;
+  --button-bg-color: #f5f4fa;
+  --black-bg-color: #2f303a;
+  --contact-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Хедер */
+.logo {
+  color: var(--title-text-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-part {
+  color: var(--accent-color);
+}
+.logo-part2 {
+  color: var(--text-white-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link,
+.contacts .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Герой */
+.hero-title {
+  color: var(--text-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  background-color: var(--black-bg-color);
+}
+.button.primary {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+}
+.button.filter {
+  color: var(--title-text-color);
+  background-color: var(--button-bg-color);
+  font-family: inherit;
+}
+.button.filter:hover,
+.button.filter:focus {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+}
+/* Особенности */
+.features .title,
+.filters .title,
+.projects .title {
+  opacity: 0;
+}
+/* Проекты */
+.team-name,
+.project-name {
+  color: var(--title-text-color);
+}
+.team-position,
+.project-app {
+  color: var(--primary-text-color);
+}
+
+/* Фильтры */
+/* Футтер */
+/* Контакты */
+.contact {
+  color: var(--text-white-color);
+  background-color: var(--black-bg-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contact.link {
+  color: var(--contact-color);
+}
+.logo.footer {
+  background-color: var(--black-bg-color);
+}
+/* Список проектов */
